@@ -4,12 +4,15 @@
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Document</title>
+    <title>CareCat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel='stylesheet' href='./output/tailwind.css'>
 </head>
 <body>
     <nav class="bg-[#F2DEE2]">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="container mx-auto xl:max-w-7xl px-4">
           <div class="relative flex h-16 items-center justify-between">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
               <!-- Mobile menu button-->
@@ -55,10 +58,10 @@
                       </div>
                       <div class="text-sm font-medium ml-4">
                           <button type="button" class="">
-                            <span class="text-[#4B4546] hover:text-white  px-4 py-2 bg-white rounded-full hover:bg-[#802B39] leading-none inline-block">Login</span>
+                            <span class="text-[#4B4546] hover:text-white  px-4 py-2 bg-white rounded-full hover:bg-[#802B39] leading-none inline-block box_shadow_btn">Login</span>
                           </button>
                           <button type="button" class="">
-                            <span class="text-[#4B4546] hover:text-white px-4 py-2 bg-white rounded-full hover:bg-[#802B39] leading-none inline-block ml-2">Creat account</span>
+                            <span class="text-[#4B4546] hover:text-white px-4 py-2 bg-white rounded-full hover:bg-[#802B39] leading-none inline-block ml-2 box_shadow_btn">Creat account</span>
                           </button>
                         </div>
                 </div>
@@ -70,7 +73,7 @@
         </div>
       
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="sm:hidden" id="mobile-menu">
+        <div class="sm:hidden" id="mobile-menu">  
           <div class="space-y-1 px-2 pt-2 pb-3">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="#" class="text-[#4B4546] hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
@@ -82,26 +85,256 @@
             <a href="#" class="text-[#4B4546] hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
             <div class="text-sm font-medium sm:ml-4">
                 <button type="button" class="">
-                  <span class="text-[#4B4546] hover:text-white px-4 py-2 bg-white rounded-full hover:bg-[#802B39] leading-none inline-block">Login</span>
+                  <span class="btn box_shadow_btn">Login</span>
                 </button>
                 <button type="button" class="">
-                  <span class="text-[#4B4546] hover:text-white px-4 py-2 bg-white rounded-full hover:bg-[#802B39] leading-none inline-block ml-2">Creat account</span>
+                  <span class="btn box_shadow_btn">Creat account</span>
                 </button>
               </div>
           </div>
         </div>
       </nav>
-      <section id="banner" class="bg-[#F2DEE2]">
-        <div class="md:container md:mx-auto">
-            <div>
-              <h1>cloned</h1>
-              <h1>cloned</h1>
-              <h1>cloned</h1>
-              <h1>cloned</h1>
-              <h1>cloned</h1>
+      <section id="banner" class="banner_bg_xs md:bg-none md:bg-[#F2DEE2]">
+        <div class="px-4 xl:max-w-7xl  container mx-auto py-12 xl:py-14">
+            <div class="flex flex-wrap flex- justify-center items-center">
+              <div class=" flex flex-wrap flex-col items-center justify-center text-center md:w-1/2 md:items-start md:text-start  xl:py-6">
+                <h1 class="text-[1.75rem] lg:text-[2.9rem] xl:text-[4rem] md:leading-snug lg:leading-snug xl:leading-snug font-light mb-7 lg:text-start ">Lorem ipsum <span class="font-semibold">dolor</span> sit amet <span class="font-semibold">consectetur</span> adipisicing elit</h1>
+                <p class="text-[#4B4546] text-base bg_blur md:bg-transparent mb-7  lg:text-xl xl:text-3xl xl:leading-snug xl:mb-9">Lorem ipsum, dolor sit amet consectetur adipisicing elit Quo deserunt assumenda reiciendis cupiditate architecto</p>
+                <div class="flex flex-wrap items-center justify-start">
+                  <span class="btn box_shadow_btn text-sm leading-none xl:text-[1.5rem] xl:py-2.5 xl:px-6"><a href="#">Get started <i class="fa-solid fa-angle-right"></i></a></span>
+                  <span class="btn box_shadow_btn text-sm leading-none ml-2 xl:text-[1.5rem] xl:py-2.5 xl:px-6"><a href="#">Learn more</a></span>
+                </div>
+              </div>
+              <div class="hidden md:block md:w-1/2 h-full">
+                <div class="w-[90%] ml-auto">
+                  <div class="w-full h-full aspect-square relative">
+                    <img class="w-full h-full rounded-full" src="./images/banner_2cat.jpg" alt="">
+                    <div class="absolute top-[4rem] xl:top-[6rem] left-[-2.5rem]"><img class="aspect-square w-[7rem] lg:w-[9rem] xl:w-[10.5rem] rounded-full" src="./images/dog1.jpeg" alt=""></div>
+                    <div class="absolute top-[2rem] right-[0] xl:top-[3rem] xl:right-[1rem]"><img class="aspect-square w-[6rem] lg:w-[6.5rem] xl:w-[7rem] rounded-full" src="./images/dog2.jpeg" alt=""></div>
+                    <div class="absolute bottom-[-2rem] right-[4rem] xl:right-[6rem]"><img class="aspect-square w-[7rem] lg:w-[8rem] xl:w-[9rem] rounded-full" src="./images/cat3.jpeg" alt=""></div>
+                  </div>
+                </div>
+              </div>   
             </div>
           </div>
       </section>
-      
+      <section id="about" class="md:py-10 lg:py-14">
+        <div class="px-4 container mx-auto py-4 xl:max-w-7xl">
+            <div class="w-full">
+                <h1 class="text-center text-2xl md:text-3xl lg:text-4xl py-3">About us</h1>
+                <div class=" flex flex-wrap flex-col sm:flex-row items-center sm:mt-10">
+                    <div class="w-full sm:w-1/2 ">
+                        <div class="min-w-[18rem] w-[70%] aspect-[2/1] bg-[#F2DEE2] border_radius_egg relative mx-auto my-5 sm:w-[80%] md:w-full md:mx-0">
+                            <img class="absolute w-full top-[-3rem]"  src="./images/about-bg-removebg-preview.png" alt="">
+                            
+                            <div class="hidden sm:block absolute  border_radius_egg bg-[#F2DEE2] w-[6rem] h-[3rem] top-[-2rem] right-[-5rem] z-[-1] lg:w-[27%] lg:top-[-1rem]"></div>
+                            <div
+                                class="hidden sm:block absolute  border_radius_egg bg-[#F2DEE2] w-[4rem] h-[2rem] top-[-4rem] right-[-9rem] z-[-1] lg:top-[-3rem]">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="text-center sm:w-1/2 sm:text-start md:pl-4">
+                        <h3 class="text-xl font-normal py-3 sm:mb-4">We Care About Our clients</h3>
+                        <p class="text-[#4B4546] mb-5 md:mb-7 lg:mb-10">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias tempora, totam molestias ducimus dolorem dolores dignissimos.</p>
+                        <div class="flex flex-wrap flex-row items-center justify-evenly sm:justify-between lg:justify-start lg:space-x-7">
+                            <div class=" mb-3 text-center">
+                                <h1 class="text-2xl mb-3 lg:text-4xl lg:tracking-wider">3 000+</h1>
+                                <p class="text-xs lg:text-sm">Happy Animals</p>
+                            </div>
+                            <div class=" mb-3 text-center lg:tracking-wider">
+                                <h1 class="text-2xl mb-3 lg:text-4xl">10 000+</h1>
+                                <p class="text-xs">Happy Animals</p>
+                            </div>
+                            <div class=" mb-3 text-center lg:tracking-wider">
+                                <h1 class="text-2xl mb-3 lg:text-4xl">1M+</h1>
+                                <p class="text-xs lg:text-sm">Happy Animals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section id="Products" class="my-16">
+        <div class="container mx-auto px-4">
+            <div>
+                <h1 class="text-center text-2xl md:text-3xl lg:text-4xl py-3 mb-7">Our Products</h1>
+                <div class="flex flex-wrap items-center mb-4 justify-center sm:justify-start">
+                    <button class="block text-lg font-light text-gray-300 focus:text-black focus:font-semibold px-4 w-20">Filter</button>
+                    <button class="block text-lg font-light text-gray-300 focus:text-black focus:font-semibold px-4 w-32">Categories</button>
+                </div>
+                <div class="flex flex-wrap flex-col items-center sm:flex-row sm:justify-evenly">
+                    <div class="w-full max-w-[25rem] px-3 mb-5 sm:w-6/12 lg:w-1/3">
+                        <div class="bg-[#e8e8e8] rounded-2xl aspect-square w-full flex flex-wrap justify-between flex-col items-center pt-8 pb-2.5 px-2.5">
+                            <div class="w-full w-[70%]"><img class="w-full" src="./images/cat-toys-1-removebg-preview.png" alt=""></div>
+                            <div class="flex flex-wrap items-center justify-between px-2 w-full text-xs sm:text-sm">
+                                <p >Cat's Tpys and<br>Goodies</p>
+                                <div class="btn bg-[#812b39] text-white"><a href="#">Learn More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full max-w-[25rem] px-3 mb-5  sm:w-6/12 lg:w-1/3">
+                        <div
+                            class="bg-[#e8e8e8] rounded-2xl aspect-square w-full flex flex-wrap justify-between flex-col items-center pt-8 pb-2.5 px-2.5">
+                            <div class="w-full w-[70%]"><img class="w-full" src="./images/cats-toys-2-removebg-preview.png" alt=""></div>
+                            <div class="flex flex-wrap items-center justify-between px-2 w-full text-xs sm:text-sm">
+                                <p>Cat's Tpys and<br>Goodies</p>
+                                <div class="btn bg-[#812b39] text-white"><a href="#">Learn More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full max-w-[25rem] px-3 mb-5  sm:w-6/12 lg:w-1/3">
+                        <div
+                            class="bg-[#e8e8e8] rounded-2xl aspect-square w-full flex flex-wrap justify-between flex-col items-center pt-8 pb-2.5 px-2.5">
+                            <div class="w-full w-[70%]"><img class="w-full" src="./images/cats-toys-3-removebg-preview.png" alt=""></div>
+                            <div class="flex flex-wrap items-center justify-between px-2 w-full text-xs sm:text-sm">
+                                <p>Cat's Tpys and<br>Goodies</p>
+                                <div class="btn bg-[#812b39] text-white"><a href="#">Learn More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    <section id="diet" class="md:py-10 lg:py-14">
+        <div class="px-4 container mx-auto py-10 xl:max-w-7xl">
+            <div class="w-full">
+                <h1 class="text-center text-2xl md:text-3xl lg:text-4xl py-3 mb-2">Choose a diet for your pet</h1>
+                <div class=" flex flex-wrap flex-col-reverse sm:flex-row items-center sm:mt-1">
+                    <div class="text-center sm:w-1/2 sm:text-start md:pl-4">
+                        <p class="text-[#4B4546] text-sm mb-5 md:mb-7 lg:mb-10 lg:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Alias tempora, totam molestias ducimus dolorem dolores dignissimos.</p>
+                        <p class="text-[#4B4546] text-sm mb-9 md:mb-7 lg:mb-10 lg:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Alias tempora, totam molestias ducimus dolorem dolores dignissimos.</p>
+                        <div class="flex flex-wrap items-center justify-center">
+                            <div class="text-sm btn xl:text-[1.2rem] xl:py-2.5 xl:px-6 text-white bg-[#812b39] box_shadow_btn">
+                                <a href="#">Get started <i
+                                class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                            <div class="text-sm btn py-[0.375rem]  ml-2 xl:text-[1.5rem] xl:py-2.5 xl:px-6  ">
+                                
+                                <a class="flex items-center" href="#">
+                                    <span class="text-green-500  inline-block text-[10px] w-8 leading-8 bg-[#f6f2f2] rounded-full  mr-[5px] text-rose-300 box_shadow_btn pl-[2px] text-center xl:w-10 xl:leading-10 xl:text-xs"><i class="fa-solid fa-play"></i></span>Learn more</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4 w-full sm:w-1/2 relative sm:mt-0 sm:mb-3">
+                        <div
+                            class="min-w-[18rem] w-[80%] max-w-[20.5rem] aspect-square bg-[#F2DEE2] border_radius_egg relative mx-auto my-5  overflow-hidden text-center sm:w-[60%] sm:ml-auto lg:w-[80%] sm:max-w-[100%]">
+                            <img class="w-[60%] mx-auto pt-5 " src="./images/rsz_man-dog-1-removebg-preview.png" alt="">
+                    
+                            
+                        </div>
+                        <div class="absolute w-[11.5rem] p-2 box_shadow_btn bg_transparent_white rounded-md top-[40%] right-0 lg:top-[3.25rem] lg:right-6">
+                            <div class="flex flex-wrap flex-row items-center ">
+                                <div class="w-[2rem] h-fit aspect-square rounded-full overflow-hidden "><img src="./images/face-2.jpeg"
+                                        alt=""></div>
+                                <div class="w-[8.5rem] text-start pl-2 text-[0.25rem] ">
+                                    <h6 class="text-xs font-semibold mb-2">Tasnim jawad</h6>
+                                    <p class="text-[.5rem] font-light ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute w-[11.5rem] p-2 box_shadow_btn bg_transparent_white rounded-md bottom-[15%] left-[10%]">
+                            <div class="flex flex-wrap flex-row items-center">
+                                <div class="w-[2rem] h-fit aspect-square rounded-full overflow-hidden "><img src="./images/face-1.jpeg"
+                                        alt="">
+                                </div>
+                                <div class="w-[8.5rem] text-start pl-2 text-[0.25rem] ">
+                                    <h6 class="text-xs font-semibold mb-2">Tasnimul Hasan</h6>
+                                    <p class="text-[.5rem] font-light ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                                class="hidden sm:block absolute  border_radius_egg bg-[#F2DEE2] w-[6rem] h-[3rem] top-[15px] left-[-35px] z-[-1] md:left-[-1rem] lg:left-[24px]">
+                            </div>
+                            <div
+                                class="hidden sm:block absolute  border_radius_egg bg-[#F2DEE2] w-[2rem] h-[1rem] top-[-3px] left-[55px] z-[-1] md:left-[65px] lg:left-[110px]">
+                            </div>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="px-4 container mx-auto py-10 xl:max-w-7xl">
+            <div>
+                <h1 class="text-center  text-3xl lg:text-4xl py-3 mb-2">Brands we Stock</h1>
+                <div class='mt-5 sm:mt-8 lg:mt-14'>
+                    <div>
+                        <ul class="flex flex-wrap justify-evenly md:justify-between items-center logo_width sm:logo_width_sm">
+                            <li><a href='#'><img src='./images/logo1_rokomari.png' alt=''></a></li>
+                            <li><a href='#'><img src='./images/logo2_Amazon_logo.svg.png' alt=''></a></li>
+                            <li><a href='#'><img src='./images/logo3_evaly.png' alt=''></a></li>
+                            <li><a href='#'><img src='./images/logo4_purina.png' alt=''></a></li>
+                            <li><a href='#'><img src='./images/logo5_ocema.png' alt=''></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#f2dee2]">
+        <div class="px-4 container mx-auto py-10 xl:max-w-7xl">
+            <div class="grid grid-cols-2 md:grid-cols-11 gap-5">
+                <div class="col-span-2 md:col-span-5 mb-10">
+                    <h1 class="text-xl font-semibold mb-8">CareCat</h1>
+                    <dv>
+                        <p class="text-[#201d1e] text-sm mb-9 md:mb-7 lg:mb-10 lg:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias tempora, </p>
+                        <div class="flex flex-wrap items-center justify-start">
+                            <div class="text-sm btn xl:text-[1.2rem] xl:py-2.5 xl:px-6 bg-[#812b39] text-white box_shadow_btn">
+                                <a href="#">Get started <i class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                            <div class="text-sm btn py-[0.375rem]  ml-2 xl:text-[1.5rem] xl:py-2.5 xl:px-6  bg-transparent">
+                                <a class="flex items-center" href="#">
+                                    <span class="inline-block text-[10px] w-8 leading-8 bg-[#f6f2f2] rounded-full  mr-[5px] text-rose-300 box_shadow_btn pl-[2px] text-center xl:w-10 xl:leading-10 xl:text-xs"><i class="fa-solid fa-play"></i>
+                                    </span>Learn more
+                                </a>
+                            </div>
+                        </div>
+                    </dv>
+                </div>
+                <div class="col-span-2 md:col-span-4 mb-10">
+                    <h1 class="text-xl font-semibold mb-8">Contacts</h1>
+                    <div class="space-y-2 text-[#201d1e] font-light">
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <a class="pl-3" href="#">01997420920</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-at"></i>
+                            <a class="pl-3" href="#">tasnimulh453@gmail</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a class="pl-3" href="#">298 south goran</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-2 md:col-span-2">
+                    <h1 class="text-xl font-semibold mb-8">Menu</h1>
+                    <div class="space-y-2 font-light">
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <a class="pl-3" href="#">Pricing</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-at"></i>
+                            <a class="pl-3" href="#">tAbout us</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a class="pl-3" href="#">Contacts</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

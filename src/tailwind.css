@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .banner_bg_xs{
+        background-image: url(../images/banner_2cat.jpg);
+        @apply bg-no-repeat bg-cover
+        
+    }
+    .btn{
+        @apply text-[#4B4546] 
+        hover:text-white px-4 py-2 bg-white rounded-full hover:bg-[#802B39] leading-none inline-block;
+    }
+    .border_radius_egg{
+        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    }
+    .box_shadow_btn{
+        box-shadow: 0px 10px 16px 1px rgb(0 0 0 / 15%);
+    }
+    .box_shadow_play{
+        box-shadow: 0px 1px 6px 1px rgb(0 0 0 / 70%);
+        
+    }
+    .bg_transparent_white{
+        background-color: rgba(255, 255, 255, .7);
+    }
+    .logo_width>* {
+        width: 25%;
+        margin: 1rem 1rem;
+        
+    }
+
+    .logo_width_sm>* {
+        width: 5rem;
+        margin: .5rem .5rem;
+        @apply sm:w-[13%]
+    }
+    .bg_blur {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+    }
+}
