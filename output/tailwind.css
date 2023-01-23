@@ -1105,6 +1105,36 @@ video {
   padding-bottom: 0.375rem;
 }
 
+.py-\[2p\] {
+  padding-top: 2p;
+  padding-bottom: 2p;
+}
+
+.py-\[2px\] {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-\[\] {
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.py-\[2\] {
+  padding-top: 2;
+  padding-bottom: 2;
+}
+
+.py-\[2-\] {
+  padding-top: 2-;
+  padding-bottom: 2-;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1200,6 +1230,10 @@ video {
   line-height: 2.25rem;
 }
 
+.text-\[1px\] {
+  font-size: 1px;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1257,6 +1291,10 @@ video {
 .text-\[\#201d1e\] {
   --tw-text-opacity: 1;
   color: rgb(32 29 30 / var(--tw-text-opacity));
+}
+
+.text-\[px\] {
+  color: px;
 }
 
 .hover\:bg-gray-700:hover {
@@ -1682,6 +1720,11 @@ video {
     padding-bottom: 0.5rem;
   }
 
+  .xl\:py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
   .xl\:text-\[3rem\] {
     font-size: 3rem;
   }
@@ -1706,6 +1749,16 @@ video {
 
   .xl\:text-\[4rem\] {
     font-size: 4rem;
+  }
+
+  .xl\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .xl\:leading-snug {
